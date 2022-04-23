@@ -47,9 +47,9 @@ Je compte donc garder la partie *Runner* mais l'adapter afin qu'elle se suffise 
 
 ### Graphisme
 
-- [ ] Récupérer les décors du jeu ;
+- [x] Récupérer les décors du jeu ;
 - [ ] Récupérer le sprite et les animation du personnage ;
-- [ ] Récupérer le HUD du jeu ;
+- [x] Récupérer le HUD du jeu ;
 
 
 
