@@ -40,8 +40,8 @@ Je compte donc garder la partie *Runner* mais l'adapter afin qu'elle se suffise 
 
 ### HTML & CSS
 
-- [ ] Créer l'HTML de la page web ;
-- [ ] Créer le CSS de la page web (la présentation autour du jeu) ;
+- [x] Créer l'HTML de la page web ;
+- [x] Créer le CSS de la page web (la présentation autour du jeu) ;
 
 
 
@@ -53,7 +53,7 @@ Je compte donc garder la partie *Runner* mais l'adapter afin qu'elle se suffise 
 
 
 
-- [ ] Redessiner les décors, sprites et HUD du jeu (seulement si projet terminé en avance... ce qui est peu probable...) ;
+- [ ] ~~Redessiner les décors, sprites et HUD du jeu (seulement si projet terminé en avance... ce qui est peu probable...) ,~~
 
 Toutes les ressources graphiques proviennent de capture d'écran du jeu !
 
