@@ -79,4 +79,5 @@ Et voilà le lien vers ma version du jeu :
 
 ### Screenshots
 
-![screenshots](C:\Users\nath3\Desktop\screenshots.gif)
+![screenshots](https://zupimages.net/viewer.php?id=22/16/wifd.gif)
+
