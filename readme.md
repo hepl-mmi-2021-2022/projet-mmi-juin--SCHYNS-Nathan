@@ -73,5 +73,10 @@ Toutes les ressources graphiques proviennent de capture d'écran du jeu !
 
 Voici une vidéo qui présente le gameplay du jeu : https://youtu.be/dslgIXt-CX0?t=55
 
+Et voilà le lien vers ma version du jeu :
 
 
+
+### Screenshots
+
+![screenshots](C:\Users\nath3\Desktop\screenshots.gif)
