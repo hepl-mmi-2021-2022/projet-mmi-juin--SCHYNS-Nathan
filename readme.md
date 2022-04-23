@@ -75,9 +75,3 @@ Voici une vidéo qui présente le gameplay du jeu : https://youtu.be/dslgIXt-CX0
 
 Et voilà le lien vers ma version du jeu :
 
-
-
-### Screenshots
-
-![screenshots](https://zupimages.net/viewer.php?id=22/16/wifd.gif)
-
