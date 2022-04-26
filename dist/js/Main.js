@@ -15,7 +15,7 @@
   \************************/
 /***/ (() => {
 
-eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6IiIsIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOltdLCJzb3VyY2VzQ29udGVudCI6WyIiXSwiZmlsZSI6Ii4vc3JjL3RzL01haW4udHMuanMifQ==\n//# sourceURL=webpack-internal:///./src/ts/Main.ts\n");
+eval("var Postknight = {};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvdHMvTWFpbi50cy5qcyIsIm1hcHBpbmdzIjoiQUFBQSxJQUFNQSxVQUFVLEdBQUcsRUFBbkIiLCJuYW1lcyI6WyJQb3N0a25pZ2h0Il0sInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly90ZW1wbGF0ZS1wcm9qZXQtZXhhbWVuLy4vc3JjL3RzL01haW4udHM/NDg4ZSJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBQb3N0a25pZ2h0ID0ge1xyXG5cclxufSJdfQ==\n//# sourceURL=webpack-internal:///./src/ts/Main.ts\n");
 
 /***/ }),
 

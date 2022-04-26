@@ -3,19 +3,47 @@
   padding: 0;
   overflow: hidden;
 }
-
 body {
-  background-image: url("../../img/background.jpg");
+  background-image: url("../../src/img/page_bg.jpg");
   background-repeat: repeat;
 }
 h1 {
   position: absolute;
   left: -10000px;
 }
-img {
+
+.title {
   display: block;
   min-width: 300px;
   max-width: 25vw;
-  margin: 0 auto -40px;
+  margin: 0 auto -60px;
   padding-top: 25px;
+  pointer-events: none;
+}
+.ui {
+  display: block;
+  width: 400px;
+  margin: -360px auto 0;
+  border-radius: 0 0 7px 7px;
+  pointer-events: none;
+}
+.health {
+  display: block;
+  width: 300px;
+  height: 23px;
+  margin: -235px auto 0;
+}
+.health_bar {
+  width: 100%;
+  height: 23px;
+  pointer-events: none;
+}
+
+canvas {
+  background-image: url("../../src/img/background.jpg");
+  display: block;
+  padding: 0;
+  margin: auto;
+  border: 3px solid #281206;
+  border-radius: 10px;
 }
