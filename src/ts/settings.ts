@@ -24,7 +24,7 @@ export const settings = {
             dw: 400,
             dh: 50
         },
-        scrollingSpeed: 1.75,
+        scrollingSpeed: 1,
     }
 
 }
