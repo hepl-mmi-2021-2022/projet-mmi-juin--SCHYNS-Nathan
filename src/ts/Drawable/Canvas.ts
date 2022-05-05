@@ -1,34 +1,30 @@
 import {Ground} from "./Ground";
-import {settings} from "../settings";
+import {Grass} from "./Grass";
 
 export class Canvas {
     private canvasElement: HTMLCanvasElement;
     private ctx: CanvasRenderingContext2D;
     public ground: Ground;
+    public grass: Grass;
     public sprite: HTMLImageElement;
 
     constructor() {
         this.canvasElement = document.getElementById('my-canvas') as HTMLCanvasElement;
         this.ctx = this.canvasElement.getContext('2d') as CanvasRenderingContext2D;
         this.ground = new Ground(this.canvasElement, this.ctx);
-        this.sprite = new Image();
-        this.sprite.src = "../../img/spritesheet.png";
-        this.sprite.onload = () => {
-            this.draw();
-        }
+        this.grass = new Grass(this.canvasElement, this.ctx);
+
     }
 
     draw() {
-        this.ctx.drawImage(
-            this.sprite,
-            settings.ground.frame.sx,
-            settings.ground.frame.sy,
-            settings.ground.frame.sw,
-            settings.ground.frame.sh,
-            settings.ground.frame.dx,
-            settings.ground.frame.dy,
-            settings.ground.frame.dw,
-            settings.ground.frame.dh
-        )
+        this.grass.draw();
+        this.ground.draw();
+    }
+
+    animate() {
+        this.ctx.clearRect(0,0, this.canvasElement.width, this.canvasElement.height);
+        this.grass.animate();
+        this.ground.animate();
+
     }
 }
