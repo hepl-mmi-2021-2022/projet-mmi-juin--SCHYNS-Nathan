@@ -11,7 +11,7 @@ export const settings = {
             dw: 400,
             dh: 110
         },
-        scrollingSpeed: 2,
+        scrollingSpeed: 3,
     },
     grass: {
         frame: {
@@ -24,7 +24,36 @@ export const settings = {
             dw: 400,
             dh: 50
         },
-        scrollingSpeed: 1,
+        scrollingSpeed: 1.5,
+    },
+    tree: {
+        frame: {
+            sx: 421,
+            sy: 10,
+            sw: 368,
+            sh: 403,
+            dx: 0,
+            dy: 0,
+            dw: 300,
+            dh: 350
+        },
+        speed: 2.8,
+        gap: {min: 400, max: 500}
+    },
+    smallTree: {
+        frame: {
+            sx: 801,
+            sy: 10,
+            sw: 253,
+            sh: 370,
+            dx: 0,
+            dy: 0,
+            dw: 253,
+            dh: 300
+        },
+        speed: 2.5,
+        gap: {min: 400, max: 800},
+        maxCount: 2
     }
 
 }

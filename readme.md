@@ -61,7 +61,7 @@ Toutes les ressources graphiques proviennent de capture d'écran du jeu !
 
 ### Canvas et TS
 
-- [ ] Coder les décors et leurs défilements ;
+- [x] Coder les décors et leurs défilements ;
 - [ ] Coder le personnage et son déplacement ;
 - [ ] Coder les actions (Charger et Se défendre) ;
 - [ ] Coder les ennemis ;

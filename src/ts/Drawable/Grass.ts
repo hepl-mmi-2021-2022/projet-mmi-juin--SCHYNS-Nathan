@@ -11,10 +11,6 @@ export class Grass {
         this.ctx = ctx;
         this.sprite = new Image();
         this.sprite.src = settings.sprite;
-
-        this.sprite.addEventListener("load", () => {
-            this.draw();
-        })
     }
 
     draw() {
@@ -45,7 +41,6 @@ export class Grass {
     animate() {
         this.draw();
         settings.grass.frame.dx -= settings.grass.scrollingSpeed;
-        console.log(settings.grass.frame.dx)
         if(settings.grass.frame.dx <= -settings.grass.frame.dw) {
             settings.grass.frame.dx = 0;
         }

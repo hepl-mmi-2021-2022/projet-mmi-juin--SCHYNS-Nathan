@@ -7,6 +7,7 @@
 body {
   background-image: url("../../src/img/page_bg.jpg");
   background-repeat: repeat;
+  overflow-y: auto;
 }
 h1 {
   position: absolute;
@@ -15,6 +16,7 @@ h1 {
 
 .title {
   display: block;
+  position: relative;
   width: 300px;
   margin: 0 auto -60px;
   padding-top: 25px;

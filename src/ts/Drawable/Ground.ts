@@ -5,16 +5,12 @@ export class Ground {
     private ctx: CanvasRenderingContext2D;
     public sprite: HTMLImageElement;
 
-
+    // Utiliser de l'héritage pour optimiser cette partie.
     constructor(canvasElement: HTMLCanvasElement, ctx: CanvasRenderingContext2D) {
         this.canvasElement = canvasElement;
         this.ctx = ctx;
         this.sprite = new Image();
         this.sprite.src = settings.sprite;
-
-        this.sprite.addEventListener("load", () => {
-            this.draw();
-        })
     }
 
     draw() {
@@ -45,7 +41,6 @@ export class Ground {
     animate() {
         this.draw();
         settings.ground.frame.dx -= settings.ground.scrollingSpeed;
-        console.log(settings.ground.frame.dx)
         if(settings.ground.frame.dx <= -settings.ground.frame.dw) {
             settings.ground.frame.dx = 0;
         }
