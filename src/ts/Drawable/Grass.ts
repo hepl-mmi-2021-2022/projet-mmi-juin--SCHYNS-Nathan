@@ -40,7 +40,7 @@ export class Grass {
 
     animate() {
         this.draw();
-        settings.grass.frame.dx -= settings.grass.scrollingSpeed;
+        settings.grass.frame.dx -= settings.player.speed * settings.grass.scrollingSpeed;
         if(settings.grass.frame.dx <= -settings.grass.frame.dw) {
             settings.grass.frame.dx = 0;
         }

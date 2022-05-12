@@ -4,7 +4,8 @@ import {Tree} from "./Tree";
 import {SmallTree} from "./SmallTree";
 import {settings} from "../settings";
 
-export class Canvas {
+
+export class BackgroundCanvas {
     private readonly canvasElement: HTMLCanvasElement;
     private readonly ctx: CanvasRenderingContext2D;
     public ground: Ground;
@@ -14,7 +15,7 @@ export class Canvas {
     private smallTrees: SmallTree[];
 
     constructor() {
-        this.canvasElement = document.getElementById('my-canvas') as HTMLCanvasElement;
+        this.canvasElement = document.getElementById('background-canvas') as HTMLCanvasElement;
         this.ctx = this.canvasElement.getContext('2d') as CanvasRenderingContext2D;
 
         this.ground = new Ground(this.canvasElement, this.ctx);
@@ -45,7 +46,6 @@ export class Canvas {
     animate() {
         this.ctx.clearRect(0,0, this.canvasElement.width, this.canvasElement.height);
         this.grass.animate();
-        console.log(this.smallTrees)
         this.smallTrees.forEach((smallTree: SmallTree) => {
             smallTree.animate();
         });

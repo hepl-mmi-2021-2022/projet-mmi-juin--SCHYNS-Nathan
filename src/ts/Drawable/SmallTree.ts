@@ -20,7 +20,7 @@ export class SmallTree {
     }
 
     init() {
-        this.speed = settings.smallTree.speed;
+        this.speed = settings.player.speed * settings.smallTree.speed;
         this.gapDistance = random2(settings.smallTree.gap);
         this.position = this.gapDistance;
     }
@@ -40,11 +40,10 @@ export class SmallTree {
     }
 
     animate() {
-        if (this.position + settings.smallTree.frame.dw + this.gapDistance < this.gapDistance) {
+        if (this.position + settings.smallTree.frame.dw < 0) {
             this.init();
         }
         this.position -= this.speed;
-
         this.draw();
     }
 }

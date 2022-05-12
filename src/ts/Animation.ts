@@ -1,17 +1,17 @@
-import {Canvas} from "./Drawable/Canvas";
-import {Ground} from "./Drawable/Ground";
+import {BackgroundCanvas} from "./Drawable/BackgroundCanvas";
+import {ActorsCanvas} from "./Drawable/ActorsCanvas";
 
 export class Animation {
-    canvas: Canvas;
+    backgroundCanvas: BackgroundCanvas;
 
 
-    constructor(canvasElement: Canvas) {
-        this.canvas = canvasElement;
+    constructor(canvasElement: BackgroundCanvas) {
+        this.backgroundCanvas = canvasElement;
         this.animate();
     }
 
     animate() {
-        this.canvas.animate();
+        this.backgroundCanvas.animate();
         requestAnimationFrame(() => this.animate());
     }
 }

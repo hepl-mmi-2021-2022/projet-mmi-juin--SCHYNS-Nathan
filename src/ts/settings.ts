@@ -52,8 +52,14 @@ export const settings = {
             dh: 300
         },
         speed: 2.5,
-        gap: {min: 400, max: 800},
+        gap: {min: 400, max: 1200},
         maxCount: 2
+    },
+    player: {
+        health: 100,
+        attack: 10,
+        defense: 10,
+        speed: 1
     }
 
 }

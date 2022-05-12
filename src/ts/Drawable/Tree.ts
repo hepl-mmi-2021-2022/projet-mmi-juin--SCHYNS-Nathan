@@ -17,7 +17,7 @@ export class Tree {
     }
 
     init() {
-        this.speed = settings.tree.speed;
+        this.speed = settings.player.speed * settings.tree.speed;
         this.gapDistance = random2(settings.tree.gap);
         this.position = this.gapDistance;
     }

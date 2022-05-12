@@ -59,7 +59,7 @@ Toutes les ressources graphiques proviennent de capture d'écran du jeu !
 
 
 
-### Canvas et TS
+### BackgroundCanvas et TS
 
 - [x] Coder les décors et leurs défilements ;
 - [ ] Coder le personnage et son déplacement ;

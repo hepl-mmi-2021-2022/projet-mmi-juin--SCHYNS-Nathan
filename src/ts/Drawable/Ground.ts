@@ -40,7 +40,7 @@ export class Ground {
 
     animate() {
         this.draw();
-        settings.ground.frame.dx -= settings.ground.scrollingSpeed;
+        settings.ground.frame.dx -= settings.player.speed * settings.ground.scrollingSpeed;
         if(settings.ground.frame.dx <= -settings.ground.frame.dw) {
             settings.ground.frame.dx = 0;
         }

@@ -45,11 +45,18 @@ h1 {
   pointer-events: none;
 }
 
-canvas {
-  background-image: url(../images/background.jpg?630c50a9ea310aaef20ceaa1beb4c7d8);
+.canvas {
+  background-image: url(../images/background.jpg?167604ac98a3a7f816e26b335b03c295);
   display: block;
+  width: 400px;
+  height: 750px;
   padding: 0;
   margin: auto;
   border: 3px solid #281206;
   border-radius: 10px;
+}
+
+#actors-canvas {
+  position: relative;
+  top: -130px;
 }
