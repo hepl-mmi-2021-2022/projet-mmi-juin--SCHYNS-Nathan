@@ -1,19 +1,20 @@
 import {BackgroundCanvas} from "./Drawable/BackgroundCanvas";
+import {ActorsCanvas} from "./Drawable/ActorsCanvas";
 import {Animation} from "./Animation";
+import {GameController} from "./GameController";
 
 class Main {
     private readonly backgroundCanvas: BackgroundCanvas;
-    private backgroundAnimation: Animation;
-
-    // private actorsCanvas: BackgroundCanvas;
-    // private actorsAnimation: Animation;
+    private readonly actorsCanvas: ActorsCanvas;
+    private animation: Animation;
+    private game: GameController;
 
     constructor() {
         this.backgroundCanvas = new BackgroundCanvas();
-        this.backgroundAnimation = new Animation(this.backgroundCanvas);
+        this.actorsCanvas = new ActorsCanvas();
 
-        // this.actorsCanvas = new BackgroundCanvas();
-        // this.actorsAnimation = new Animation(this.actorsCanvas);
+        this.animation = new Animation(this.backgroundCanvas);
+        this.game = new GameController();
     }
 }
 new Main();

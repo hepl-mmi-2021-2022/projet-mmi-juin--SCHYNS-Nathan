@@ -4,7 +4,6 @@ import {ActorsCanvas} from "./Drawable/ActorsCanvas";
 export class Animation {
     backgroundCanvas: BackgroundCanvas;
 
-
     constructor(canvasElement: BackgroundCanvas) {
         this.backgroundCanvas = canvasElement;
         this.animate();

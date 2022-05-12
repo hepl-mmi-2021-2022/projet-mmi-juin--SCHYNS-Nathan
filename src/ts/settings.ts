@@ -59,7 +59,12 @@ export const settings = {
         health: 100,
         attack: 10,
         defense: 10,
-        speed: 1
+        speed: 1,
+        cooldown: {
+            chargeInCD: false,
+            shieldInCD: false,
+        },
+
     }
 
 }
