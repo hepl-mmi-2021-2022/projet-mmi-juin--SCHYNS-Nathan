@@ -57,8 +57,8 @@ export const settings = {
     },
     player: {
         health: 100,
-        attack: 10,
-        defense: 10,
+        attack: 25,
+        defense: 5,
         speed: 1,
         cooldown: {
             chargeInCD: false,
@@ -66,7 +66,10 @@ export const settings = {
         },
     },
     ennemy: {
-        health:
+        health: {min: 30, max: 55},
+        attack: {min: 10, max: 20},
+        speed: 3.6,
+        gap: {min: 450, max: 800},
     }
 
 }

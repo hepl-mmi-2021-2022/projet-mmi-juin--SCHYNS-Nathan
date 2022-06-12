@@ -14,6 +14,7 @@ export class GameController {
                     console.log("CHARGEEEEEZ")
                     settings.player.cooldown.chargeInCD = true;
                     settings.player.speed = 2.5;
+                    settings.player.attack = 50;
                     setTimeout( this.resetPlayerSPeed,2000);
                     setTimeout( this.resetChargeCooldown,5000);
                 }
@@ -23,15 +24,17 @@ export class GameController {
                     console.log("Slow down...")
                     settings.player.cooldown.shieldInCD = true;
                     settings.player.speed = 0.5;
+                    settings.player.defense = 10;
                     setTimeout(this.resetShieldCooldown, 7000);
                 }
             }
         });
-
     }
 
     resetPlayerSPeed() {
         settings.player.speed = 1;
+        settings.player.attack = 25;
+        settings.player.defense = 5;
     }
     resetChargeCooldown() {
         settings.player.cooldown.chargeInCD = false;

@@ -20,8 +20,11 @@ export class ActorsCanvas {
         this.sprite = new Image();
         this.sprite.src = settings.sprite;
         this.sprite.addEventListener("load", () => {
+            this.ennemy.init();
             this.draw();
+            this.animate();
         })
+
     }
 
     draw() {
@@ -30,7 +33,10 @@ export class ActorsCanvas {
     }
 
     animate() {
-
+        this.ctx.clearRect(0,0, this.canvasElement.width, this.canvasElement.height);
+        this.player.draw();
+        this.ennemy.animate();
+        requestAnimationFrame(() => this.animate());
     }
 
 }

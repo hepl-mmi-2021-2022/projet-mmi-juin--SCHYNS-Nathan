@@ -9,10 +9,6 @@ export class Player {
         this.ctx = ctx;
     }
 
-    init() {
-
-    }
-
     draw() {
         this.ctx.beginPath();
         this.ctx.fillStyle = '#afafaf'

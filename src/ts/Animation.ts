@@ -1,5 +1,4 @@
 import {BackgroundCanvas} from "./Drawable/BackgroundCanvas";
-import {ActorsCanvas} from "./Drawable/ActorsCanvas";
 
 export class Animation {
     backgroundCanvas: BackgroundCanvas;
