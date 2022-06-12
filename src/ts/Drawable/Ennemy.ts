@@ -47,5 +47,6 @@ export class Ennemy {
             this.healthBarWidth.width = settings.player.health*3;
             this.position += this.width;
         }
+
     }
 }
