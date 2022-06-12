@@ -5,7 +5,7 @@ export class Ennemy {
     private canvasElement: HTMLCanvasElement;
     private ctx: CanvasRenderingContext2D;
     private position: number;
-    private width: number;
+    private pushBack: number;
     private ennemyHealth: number;
     private ennemyAttack: number;
     private healthBarWidth: Element;
@@ -17,7 +17,7 @@ export class Ennemy {
 
     init() {
         this.position = random2(settings.ennemy.gap);
-        this.width = 80;
+        this.pushBack = 100;
         this.ennemyHealth = random2(settings.ennemy.health);
         this.ennemyAttack = random2(settings.ennemy.attack);
         this.healthBarWidth = document.querySelector(".health_bar");
@@ -26,7 +26,7 @@ export class Ennemy {
     draw() {
         this.ctx.beginPath();
         this.ctx.fillStyle = '#a43131'
-        this.ctx.fillRect(this.position, 40, this.width, 50);
+        this.ctx.fillRect(this.position, 40, 80, 50);
         this.ctx.closePath();
     }
 
@@ -45,7 +45,7 @@ export class Ennemy {
             settings.player.health -= (this.ennemyAttack - settings.player.defense);
             // @ts-ignore
             this.healthBarWidth.width = settings.player.health*3;
-            this.position += this.width;
+            this.position += this.pushBack;
         }
 
     }

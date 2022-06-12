@@ -59,3 +59,40 @@ h1 {
   position: relative;
   top: -130px;
 }
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 72px;
+  width: 300px;
+  margin: 38px auto 0;
+}
+
+.shieldButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  width: 132px;
+  fill: #E8CE71;
+  cursor: pointer;
+}
+
+.chargeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  width: 132px;
+  fill: #E8CE71;
+  cursor: pointer;
+}
+
+.scoreText {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #544435;
+  width: 300px;
+  margin: -160px auto 0;
+}

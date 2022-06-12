@@ -24,7 +24,6 @@ export class ActorsCanvas {
             this.draw();
             this.animate();
         })
-
     }
 
     draw() {
@@ -36,9 +35,6 @@ export class ActorsCanvas {
         this.ctx.clearRect(0,0, this.canvasElement.width, this.canvasElement.height);
         this.player.draw();
         this.ennemy.animate();
-        if (settings.player.health <= 0) {
-            alert("Oh non, vos PV sont tombés à 0 ! Rechargez la page pour relancer une partie.");
-        }
         requestAnimationFrame(() => this.animate());
     }
 
