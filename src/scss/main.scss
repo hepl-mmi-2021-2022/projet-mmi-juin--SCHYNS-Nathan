@@ -24,7 +24,7 @@ h1 {
 }
 .ui {
   display: block;
-  width: 400px;
+  max-width: 400px;
   margin: -360px auto 0;
   border-radius: 0 0 7px 7px;
   pointer-events: none;
@@ -43,7 +43,7 @@ h1 {
 .canvas {
   background-image: url("../../src/img/background.jpg");
   display: block;
-  width: 400px;
+  max-width: 400px;
   height: 750px;
   padding: 0;
   margin: auto;
@@ -90,4 +90,17 @@ h1 {
   color: #544435;
   width: 300px;
   margin: -160px auto 0;
+}
+
+@media (max-width: 400px) {
+  .title {
+    display: none;
+  }
+  .canvas {
+    border: none;
+    border-radius: 0;
+  }
+  .ui {
+    border-radius: 0;
+  }
 }
