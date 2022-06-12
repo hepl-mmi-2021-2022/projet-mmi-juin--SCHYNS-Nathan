@@ -1,5 +1,5 @@
 export const settings = {
-    sprite: './src/img/sheet.png',
+    sprite: './src/img/background_sprite.png',
     ground: {
         frame: {
             sx: 10,
@@ -64,7 +64,9 @@ export const settings = {
             chargeInCD: false,
             shieldInCD: false,
         },
-
+    },
+    ennemy: {
+        health:
     }
 
 }

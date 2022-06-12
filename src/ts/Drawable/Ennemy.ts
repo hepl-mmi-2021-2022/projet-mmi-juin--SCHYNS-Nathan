@@ -1,6 +1,5 @@
-import {settings} from "../settings";
 
-export class Player {
+export class Ennemy {
     private canvasElement: HTMLCanvasElement;
     private ctx: CanvasRenderingContext2D;
 
@@ -15,8 +14,8 @@ export class Player {
 
     draw() {
         this.ctx.beginPath();
-        this.ctx.fillStyle = '#afafaf'
-        this.ctx.fillRect(30, 15, 65, 75);
+        this.ctx.fillStyle = '#a43131'
+        this.ctx.fillRect(290, 40, 80, 50);
         this.ctx.closePath();
     }
 

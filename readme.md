@@ -36,6 +36,12 @@ Je compte donc garder la partie *Runner* mais l'adapter afin qu'elle se suffise 
 
 
 
+## Optimisation :
+
+Afin que le jeu ne subisse pas de ralentissement, j'ai effectué plusieurs optimisations
+
+
+
 ## TODO :
 
 ### HTML & CSS
@@ -44,34 +50,29 @@ Je compte donc garder la partie *Runner* mais l'adapter afin qu'elle se suffise 
 - [x] Créer le CSS de la page web (la présentation autour du jeu) ;
 
 
-
 ### Graphisme
 
 - [x] Récupérer les décors du jeu ;
 - [ ] Récupérer le sprite et les animation du personnage ;
 - [x] Récupérer le HUD du jeu ;
 
-
-
 - [ ] ~~Redessiner les décors, sprites et HUD du jeu (seulement si projet terminé en avance... ce qui est peu probable...) ,~~
 
 Toutes les ressources graphiques proviennent de capture d'écran du jeu !
 
 
-
 ### BackgroundCanvas et TS
 
 - [x] Coder les décors et leurs défilements ;
-- [ ] Coder le personnage et son déplacement ;
-- [ ] Coder les actions (Charger et Se défendre) ;
+- [x] Coder le personnage et son "déplacement" ;
+- [x] Coder les actions (Charger et Se défendre) ;
 - [ ] Coder les ennemis ;
 - [ ] Coder les interactions (attaque automatique, perte de PV, interaction des actions) ;
-
 
 
 ## Démo du jeu
 
 Voici une vidéo qui présente le gameplay du jeu : https://youtu.be/dslgIXt-CX0?t=55
 
-Et voilà le lien vers ma version du jeu :
+Et voilà le lien vers ma version du jeu : https://postknight.nathan-schyns.be
 

@@ -6,7 +6,6 @@ export class Tree {
     private ctx: CanvasRenderingContext2D;
     public sprite: HTMLImageElement;
     public position: number;
-    private speed: number;
     private gapDistance: number;
 
     constructor(canvasElement: HTMLCanvasElement, ctx: CanvasRenderingContext2D) {

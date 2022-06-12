@@ -2,17 +2,18 @@ import {settings} from "./settings";
 
 export class GameController {
 
+    // GameController en tant qu'état du jeu ???
     constructor() {
         this.addEventListeners();
     }
 
     addEventListeners() {
-        window.addEventListener('keydown', (event) => {
+        window.addEventListener('keydown', (event: KeyboardEvent) => {
             if(event.key === "ArrowRight") {
                 if(settings.player.cooldown.chargeInCD === false) {
                     console.log("CHARGEEEEEZ")
                     settings.player.cooldown.chargeInCD = true;
-                    settings.player.speed = 2;
+                    settings.player.speed = 2.5;
                     setTimeout( this.resetPlayerSPeed,2000);
                     setTimeout( this.resetChargeCooldown,5000);
                 }
@@ -22,11 +23,11 @@ export class GameController {
                     console.log("Slow down...")
                     settings.player.cooldown.shieldInCD = true;
                     settings.player.speed = 0.5;
-                    // setTimeout(this.resetPlayerSPeed, 3500);
                     setTimeout(this.resetShieldCooldown, 7000);
                 }
             }
-        })
+        });
+
     }
 
     resetPlayerSPeed() {
