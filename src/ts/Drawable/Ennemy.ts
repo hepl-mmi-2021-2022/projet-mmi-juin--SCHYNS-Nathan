@@ -32,7 +32,13 @@ export class Ennemy {
 
     animate() {
         this.contactInteraction();
-        this.position -= settings.ennemy.speed;
+        if (settings.player.speed === 2.5) {
+            this.position -= settings.ennemy.speed*2;
+        } else if (settings.player.speed === .5) {
+            this.position -= settings.ennemy.speed/1.5;
+        } else {
+            this.position -= settings.ennemy.speed;
+        }
         this.draw();
     }
 

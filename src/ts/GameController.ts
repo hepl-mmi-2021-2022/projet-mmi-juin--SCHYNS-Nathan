@@ -1,7 +1,6 @@
 import {settings} from "./settings";
 
 export class GameController {
-
     private shieldButton: HTMLDivElement;
     private chargeButton: HTMLDivElement;
 
@@ -67,9 +66,14 @@ export class GameController {
     }
     resetChargeCooldown() {
         settings.player.cooldown.chargeInCD = false;
+        this.chargeButton = document.querySelector(".chargeButton");
+        this.chargeButton.style.fill = "#E8CE71";
     }
     resetShieldCooldown() {
         settings.player.speed = 1;
         settings.player.cooldown.shieldInCD = false;
+        this.shieldButton = document.querySelector(".shieldButton");
+        this.shieldButton.style.fill = "#E8CE71";
+
     }
 }

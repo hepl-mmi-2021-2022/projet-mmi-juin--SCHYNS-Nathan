@@ -70,7 +70,16 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 72px;
-  width: 132px;
+  width: 72px;
+  fill: #E8CE71;
+  cursor: pointer;
+}
+.healButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  width: 72px;
   fill: #E8CE71;
   cursor: pointer;
 }
@@ -79,7 +88,7 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 75px;
-  width: 132px;
+  width: 72px;
   fill: #E8CE71;
   cursor: pointer;
 }
