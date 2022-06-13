@@ -67,7 +67,7 @@ Toutes les ressources graphiques proviennent de capture d'écran du jeu !
 - [x] Coder le personnage et son "déplacement" ;
 - [x] Coder les actions (Charger et Se défendre) ;
 - [x] Coder les ennemis ;
-- [ ] Coder les interactions (attaque automatique, perte de PV, interaction des actions) ;
+- [x] Coder les interactions (attaque automatique, perte de PV, interaction des actions) ;
 
 
 ## Démo du jeu
