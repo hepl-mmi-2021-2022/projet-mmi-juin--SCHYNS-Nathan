@@ -4,6 +4,10 @@
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   background-image: url("../../src/img/page_bg.jpg");
   background-repeat: repeat;
@@ -99,6 +103,47 @@ h1 {
   color: #544435;
   width: 300px;
   margin: -160px auto 0;
+}
+
+.startText, .gameOver {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.75);
+  color: #ffffff;
+}
+.startText *, .gameOver * {
+  text-align: center;
+}
+.startTitle, .gameOverTitle {
+  font-size: 50px;
+  margin: 200px auto 0;
+  width: 400px;
+  font-weight: bold;
+}
+.startExplain, .gameOverResult {
+  font-size: 30px;
+  margin: 50px auto 0;
+  width: 380px;
+}
+.startPush {
+  font-size: 30px;
+  margin: 100px auto 0;
+  width: 400px;
+}
+.pushToStart {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto 0;
+  width: 305px;
+  cursor: pointer;
+}
+.startBegin {
+  font-size: 30px;
+  margin: auto;
+  width: 400px;
 }
 
 @media (max-width: 400px) {

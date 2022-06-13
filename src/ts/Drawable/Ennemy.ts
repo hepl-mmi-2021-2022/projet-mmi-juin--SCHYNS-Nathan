@@ -37,15 +37,17 @@ export class Ennemy {
     }
 
     animate() {
-        this.contactInteraction();
-        if (settings.player.speed === 2.5) {
-            this.position -= settings.ennemy.speed*2;
-        } else if (settings.player.speed === .5) {
-            this.position -= settings.ennemy.speed/1.5;
-        } else {
-            this.position -= settings.ennemy.speed;
+        if (settings.isStart === true && settings.gameOver === false) {
+            this.contactInteraction();
+            if (settings.player.speed === 2.5) {
+                this.position -= settings.ennemy.speed*2;
+            } else if (settings.player.speed === .5) {
+                this.position -= settings.ennemy.speed/1.5;
+            } else {
+                this.position -= settings.ennemy.speed;
+            }
+            this.draw();
         }
-        this.draw();
     }
 
     contactInteraction() {

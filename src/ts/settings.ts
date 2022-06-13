@@ -1,5 +1,7 @@
 export const settings = {
     sprite: './src/img/background_sprite.png',
+    isStart: false,
+    gameOver: false,
     ground: {
         frame: {
             sx: 10,
