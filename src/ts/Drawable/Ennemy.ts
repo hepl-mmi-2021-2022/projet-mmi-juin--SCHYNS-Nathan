@@ -9,6 +9,8 @@ export class Ennemy {
     private ennemyHealth: number;
     private ennemyAttack: number;
     private healthBarWidth: Element;
+    private deadSound: HTMLAudioElement;
+    private hitSound: HTMLAudioElement;
 
     constructor(canvasElement: HTMLCanvasElement, ctx: CanvasRenderingContext2D) {
         this.canvasElement = canvasElement;
@@ -21,6 +23,10 @@ export class Ennemy {
         this.ennemyHealth = random2(settings.ennemy.health);
         this.ennemyAttack = random2(settings.ennemy.attack);
         this.healthBarWidth = document.querySelector(".health_bar");
+
+        this.deadSound = new Audio('/src/se/dead.ogg');
+        this.hitSound = new Audio('/src/se/hit.ogg');
+
     }
 
     draw() {
@@ -43,16 +49,17 @@ export class Ennemy {
     }
 
     contactInteraction() {
-        if (this.ennemyHealth <= 0) {
-            this.init();
-        }
         if (this.position <= 95) {
             this.ennemyHealth -= settings.player.attack;
             settings.player.health -= (this.ennemyAttack - settings.player.defense);
             // @ts-ignore
             this.healthBarWidth.width = settings.player.health*3;
+            this.hitSound.play();
             this.position += this.pushBack;
         }
-
+        if (this.ennemyHealth <= 0) {
+            this.deadSound.play();
+            this.init();
+        }
     }
 }

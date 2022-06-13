@@ -63,6 +63,7 @@ export const settings = {
         cooldown: {
             chargeInCD: false,
             shieldInCD: false,
+            healInCD: false,
         },
     },
     ennemy: {
