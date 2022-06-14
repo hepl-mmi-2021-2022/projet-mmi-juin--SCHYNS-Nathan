@@ -38,7 +38,11 @@ Je compte donc garder la partie *Runner* mais l'adapter afin qu'elle se suffise 
 
 ## Optimisation :
 
-Afin que le jeu ne subisse pas de ralentissement, j'ai effectué plusieurs optimisations
+Afin que le jeu ne subisse pas de ralentissement, j'ai effectué quelques optimisations.
+
+Premièrement, l'image de fond est un simple background-image car elle est immobile et la dessiner via canvas demanderait trop de ressource pour pas grand chose.
+
+J'ai aussi utilisé plusieurs canvas, un pour le décors qui défile et un autre pour gérer le personnage et les ennemis, afin d'avoir des canvas à la bonne taille.
 
 
 
